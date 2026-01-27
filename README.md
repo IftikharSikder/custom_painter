@@ -1,4 +1,5 @@
 # custom_painter
+# flutter version: 3.38.7
 
 A new Flutter project.
 
