@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screens/drawline.dart';
+import 'Screens/draw_circle.dart';
+import 'Screens/draw_line.dart';
 
 void main(){
   runApp(MyApp());
@@ -10,7 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DrawLine(),
+      debugShowCheckedModeBanner: false,
+      //home: DrawLine(),
+      home: DrawCircle(),
     );
   }
 }
