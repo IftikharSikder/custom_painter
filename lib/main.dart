@@ -1,3 +1,4 @@
+import 'package:custom_painter/Screens/draw_oval.dart';
 import 'package:flutter/material.dart';
 import 'Screens/draw_circle.dart';
 import 'Screens/draw_line.dart';
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: DrawLine(),
       //home: DrawCircle(),
-      home: DrawRectangle(),
+      //home: DrawRectangle(),
+        home: DrawOval(),
     );
   }
 }
