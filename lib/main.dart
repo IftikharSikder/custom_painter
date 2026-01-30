@@ -1,4 +1,3 @@
-import 'package:custom_painter/Screens/draw_oval.dart';
 import 'package:flutter/material.dart';
 import 'Screens/differ_between_RRect.dart';
 import 'Screens/draw_circle.dart';
@@ -23,7 +22,8 @@ class MyApp extends StatelessWidget {
       //home: DrawRectangle(),
        // home: DrawOval(),
       //home: RectangleWithRoundedCorner(),
-      home: DrawGradientCanvas(),
+      //home: DrawGradientCanvas(),
+      home: DrawColorCanvas(),
     );
   }
 }
