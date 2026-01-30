@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'Screens/draw_circle.dart';
 import 'Screens/draw_line.dart';
 import 'Screens/draw_rectangle.dart';
+import 'Screens/rectangle_with_rounded_corner.dart';
 
 void main(){
   runApp(MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       //home: DrawLine(),
       //home: DrawCircle(),
       //home: DrawRectangle(),
-        home: DrawOval(),
+       // home: DrawOval(),
+      home: RectangleWithRoundedCorner(),
     );
   }
 }
