@@ -5,6 +5,7 @@ import 'Screens/draw_color_canvas.dart';
 import 'Screens/draw_gradient_canvas.dart';
 import 'Screens/draw_line.dart';
 import 'Screens/draw_points_lines_polygons.dart';
+import 'Screens/draw_points_lines_polygons_using_fload32_list.dart';
 import 'Screens/draw_rectangle.dart';
 import 'Screens/rectangle_with_rounded_corner.dart';
 
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       //home: RectangleWithRoundedCorner(),
       //home: DrawGradientCanvas(),
       //home: DrawColorCanvas(),
-      home: DrawPointsLinesPolygons(),
+      //home: DrawPointsLinesPolygons(),
+      home: DrawPointsLinesPolygonsUsingFload32List(),
     );
   }
 }
