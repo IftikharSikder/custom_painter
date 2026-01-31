@@ -9,9 +9,12 @@ class DrawPointsLinesPolygons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: CustomPaint(
-          size: Size(300, 300),
-          painter: PointsPainter(),
+        child: Container(
+          color: Colors.grey,
+          child: CustomPaint(
+            size: Size(300, 300),
+            painter: PointsPainter(),
+          ),
         ),
       ),
     );
@@ -22,18 +25,18 @@ class PointsPainter extends CustomPainter{
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()
-        ..color = Colors.blue
+        ..color = Colors.red
         ..style = PaintingStyle.stroke
-        ..strokeWidth = 5;
+        ..strokeWidth = 10;
     List<Offset> points = [
-       Offset(20, 0),
-       Offset(40, 20),
-       Offset(40, 20),
-       Offset(0, 40),
-       Offset(0, 40),
-       Offset(20, 0),
+       Offset.zero,
+       Offset(size.width, 0),
+      // Offset(size.width, 0),
+       Offset(size.width/2, size.height/2),
+      // Offset(size.width/2, size.height/2),
+      Offset.zero,
     ];
-    canvas.drawPoints(PointMode.lines, points, paint);
+    canvas.drawPoints(PointMode.polygon, points, paint);
   }
 
   @override
