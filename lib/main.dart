@@ -4,6 +4,7 @@ import 'Screens/draw_circle.dart';
 import 'Screens/draw_color_canvas.dart';
 import 'Screens/draw_gradient_canvas.dart';
 import 'Screens/draw_line.dart';
+import 'Screens/draw_points_lines_polygons.dart';
 import 'Screens/draw_rectangle.dart';
 import 'Screens/rectangle_with_rounded_corner.dart';
 
@@ -20,10 +21,11 @@ class MyApp extends StatelessWidget {
       //home: DrawLine(),
       //home: DrawCircle(),
       //home: DrawRectangle(),
-       // home: DrawOval(),
+      // home: DrawOval(),
       //home: RectangleWithRoundedCorner(),
       //home: DrawGradientCanvas(),
-      home: DrawColorCanvas(),
+      //home: DrawColorCanvas(),
+      home: DrawPointsLinesPolygons(),
     );
   }
 }
